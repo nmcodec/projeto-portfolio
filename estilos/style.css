@@ -31,12 +31,15 @@ body {
 }
 
 header {
-  background-color: var(--destaque);
-  color: var(--texto);
-  padding: 10px;
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  background-color: var(--destaque);
+  color: var(--texto);
+  padding: 10px;
+  position: sticky; /* mantém o cabeçalho fixo */
+  top: 0;
+  z-index: 1; /* posição das camadas que contém conteúdos (podendo ficar na frente ou atrás de outros elementos) */
 }
 
 nav#menu ul {
